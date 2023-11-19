@@ -50,7 +50,7 @@ export default function Home() {
                 expertise in web development from various businesses including
                 startup companies.
               </MotionParagraph>
-              <div className='relative flex justify-center xl:hidden'>
+              <div className='relative z-10 flex justify-center xl:hidden'>
                 <ProjectsLink />
               </div>
               <motion.div
