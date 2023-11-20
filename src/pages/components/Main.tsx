@@ -8,7 +8,11 @@ export default function Main({ children }: { children: React.ReactNode }) {
   const handleExitComplete = () => window && window.scrollTo({ top: 0 })
 
   return (
-    <AnimatePresence mode='wait' onExitComplete={handleExitComplete}>
+    <AnimatePresence
+      initial={false}
+      mode='wait'
+      onExitComplete={handleExitComplete}
+    >
       <main key={pathname}>
         <Transition />
         {children}
