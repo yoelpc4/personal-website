@@ -78,6 +78,10 @@ export default function Document() {
         <meta name='msapplication-TileColor' content='#ffffff' />
         <meta name='msapplication-TileImage' content='/ms-icon-144x144.png' />
         <meta name='theme-color' content='#ffffff' />
+        <meta
+          name='google-site-verification'
+          content='HbNx0u9G_LJQby7cW5SIuEVBX3X4eYytFK5ECXqEWZo'
+        />
       </Head>
       <body>
         <Main />
