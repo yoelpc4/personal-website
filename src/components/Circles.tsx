@@ -4,7 +4,7 @@ export default function Circles() {
   return (
     <div className='absolute -bottom-0 -right-16 w-[200px] animate-pulse mix-blend-color-dodge duration-75 xl:w-[300px]'>
       <Image
-        src='/images/circles.png'
+        src='/images/circles.webp'
         alt='circles'
         width={260}
         height={200}

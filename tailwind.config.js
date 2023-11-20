@@ -19,8 +19,8 @@ module.exports = {
       },
       backgroundImage: {
         background: 'url("/images/background.svg")',
-        explosion: 'url("/images/explosion.png")',
-        circles: 'url("/images/circles.png")',
+        explosion: 'url("/images/explosion.webp")',
+        circles: 'url("/images/circles.webp")',
         'circle-star': 'url("/images/circle-star.svg")',
       },
       colors: {
