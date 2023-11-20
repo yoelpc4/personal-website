@@ -34,7 +34,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
         </Main>
       </div>
-      <GoogleAnalytics trackPageViews />
+      <GoogleAnalytics strategy='lazyOnload' trackPageViews />
       <Analytics />
     </>
   )
