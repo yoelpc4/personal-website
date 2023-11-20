@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app'
 import { Sora } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
 import { GoogleAnalytics } from 'nextjs-google-analytics'
 import TopLeftImage from '@/pages/components/TopLeftImage'
 import Header from '@/pages/components/Header'
@@ -23,7 +24,6 @@ const sora = Sora({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <GoogleAnalytics trackPageViews />
       <div
         className={`relative overflow-x-hidden bg-secondary bg-background bg-cover bg-no-repeat p-0 ${sora.variable} font-sora leading-relaxed text-white`}
       >
@@ -34,6 +34,8 @@ export default function App({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
         </Main>
       </div>
+      <GoogleAnalytics trackPageViews />
+      <Analytics />
     </>
   )
 }
