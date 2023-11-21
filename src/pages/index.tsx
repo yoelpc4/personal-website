@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
@@ -7,10 +8,16 @@ import {
   MotionHeading2,
   MotionParagraph,
 } from '@/components/MotionComponents'
-import ParticlesContainer from '@/pages/components/ParticlesContainer'
 import ProjectsLink from '@/pages/components/ProjectsLink'
-import ServiceSlider from '@/pages/components/ServiceSlider'
 import { fadeIn } from '@/utils/framer-motion'
+
+const LazyParticlesContainer = dynamic(
+  () => import('@/pages/components/ParticlesContainer')
+)
+
+const LazyServiceSlider = dynamic(
+  () => import('@/pages/components/ServiceSlider')
+)
 
 export default function Home() {
   return (
@@ -66,7 +73,7 @@ export default function Home() {
           </div>
           <div className='absolute bottom-0 right-0 h-screen w-full'>
             <div className='translate-z-0 absolute h-screen w-full bg-none mix-blend-color-dodge xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat' />
-            <ParticlesContainer />
+            <LazyParticlesContainer />
             <motion.div
               variants={fadeIn('up', 0.5)}
               initial='hidden'
@@ -116,7 +123,7 @@ export default function Home() {
                 exit='hidden'
                 className='w-full xl:max-w-[65%]'
               >
-                <ServiceSlider />
+                <LazyServiceSlider />
               </motion.div>
             </div>
           </div>
