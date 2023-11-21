@@ -1,6 +1,5 @@
 import type { AppProps } from 'next/app'
 import { Sora } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/react'
 import { GoogleAnalytics } from 'nextjs-google-analytics'
 import TopLeftImage from '@/pages/components/TopLeftImage'
 import Header from '@/pages/components/Header'
@@ -35,7 +34,6 @@ export default function App({ Component, pageProps }: AppProps) {
         </Main>
       </div>
       <GoogleAnalytics strategy='lazyOnload' trackPageViews />
-      <Analytics />
     </>
   )
 }
