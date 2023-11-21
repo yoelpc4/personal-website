@@ -8,6 +8,7 @@ export default function Avatar() {
         alt='avatar'
         width={737}
         height={678}
+        priority
         className='translate-z-0'
       />
     </div>

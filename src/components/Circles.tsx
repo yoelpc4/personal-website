@@ -8,6 +8,7 @@ export default function Circles() {
         alt='circles'
         width={260}
         height={200}
+        priority
         className='h-full w-full'
       />
     </div>
