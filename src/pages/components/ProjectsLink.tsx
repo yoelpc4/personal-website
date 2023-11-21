@@ -15,6 +15,7 @@ export default function ProjectsLink() {
           alt='projects'
           width={141}
           height={148}
+          priority
           className='h-full max-h-[148px] w-full max-w-[141px] animate-spin-slow'
         />
         <HiArrowRight className='absolute text-4xl transition-all duration-300 group-hover:translate-x-2' />

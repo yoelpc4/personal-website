@@ -13,6 +13,7 @@ export default function Header() {
               alt='logo'
               width={256}
               height={144}
+              priority
               className='h-auto w-[128px]'
             />
           </Link>
