@@ -8,7 +8,6 @@ export default function BulbImage() {
         alt='bulb'
         width={256}
         height={392}
-        priority
         className='h-full w-full'
       />
     </div>
