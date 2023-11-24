@@ -213,8 +213,8 @@ export const projects = [
     url: 'https://events.petra.ac.id',
   },
   {
-    title: 'Certified Public Accountant SCEF',
-    image: '/images/certified-public-accountant-scef.jpg',
+    title: 'Public Accounting Firm SCEF',
+    image: '/images/public-accounting-firm-scef.jpg',
     url: 'https://scef.co.id',
   },
 ]
